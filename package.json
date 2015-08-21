@@ -1,0 +1,16 @@
+{
+  "name": "generator-hawk",
+  "version": "0.1.0",
+  "description": "yeoman-generator",
+  "files": [
+    "app",
+    "modules"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "yeoman-generator": "^0.20.2"
+  }
+}
