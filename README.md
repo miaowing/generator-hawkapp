@@ -1,5 +1,5 @@
 # generator-hawkapp
-this yeoman-generator is used for angularJS + requireJS.
+The generator generate this project which is built by angularJS and requireJS.
 
 #### Usage
 ```
