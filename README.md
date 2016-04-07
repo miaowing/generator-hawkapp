@@ -29,7 +29,7 @@ npm install yeoman-generator-hawk -g
 ##### Generate Project
 ```
 $ yo hawk
-? Your project name (myProject) 
+? Your project name (myProject) default is current folder name.
 ? Your name (yeoman) 
 ```
 
