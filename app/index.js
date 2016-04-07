@@ -1,4 +1,5 @@
 var generators = require('yeoman-generator');
+var process= require('process');
 var _ = require('lodash');
 
 module.exports = generators.Base.extend({
@@ -8,12 +9,15 @@ module.exports = generators.Base.extend({
     },
     //User Interface
     promptingModuleName: function () {
+        var tempArr = process.cwd().split('/'),
+            tempProjectName = tempArr[tempArr.length - 1];
+
         var done = this.async();
         this.prompt({
             type: 'input',
             name: 'name',
             message: 'Your project name',
-            default: 'myProject' // Default to current folder name
+            default: tempProjectName // Default to current folder name
         }, function (answers) {
             this.projectName = answers.name;
             done();
@@ -55,17 +59,17 @@ module.exports = generators.Base.extend({
                 'modules/core/controllers/core.controller.js'
             ],
             outPaths = [
-                this.projectName + '/modules/core/app.js',
-                this.projectName + '/modules/core/main.js',
-                this.projectName + '/modules/config.js',
-                this.projectName + '/modules/lib.js',
-                this.projectName + '/.gitignore',
-                this.projectName + '/bower.json',
-                this.projectName + '/GruntFile.js',
-                this.projectName + '/modules/index.html',
-                this.projectName + '/package.json',
-                this.projectName + '/modules/static/less/' + this.projectName + '.less',
-                this.projectName + '/modules/core/controllers/core.controller.js'
+                'modules/core/app.js',
+                'modules/core/main.js',
+                'modules/config.js',
+                'modules/lib.js',
+                '.gitignore',
+                'bower.json',
+                'GruntFile.js',
+                'modules/index.html',
+                'package.json',
+                'modules/static/less/' + this.projectName + '.less',
+                'modules/core/controllers/core.controller.js'
             ];
 
         for (var i = 0; i < files.length; i++) {
@@ -87,7 +91,13 @@ module.exports = generators.Base.extend({
     },
 
     install: function () {
+        var howToInstall =
+            '\nAfter running npm install & bower install.\n' +
+            'choose grunt serve to run debug environment.\n' +
+            'choose grunt build to build project.';
 
+        this.log(howToInstall);
+        this.installDependencies();
     },
 
     test: function () {

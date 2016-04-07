@@ -40,7 +40,7 @@ module.exports = generators.Base.extend({
 	},
 
 	install: function () {
-
+		console.log('')
 	},
 
 	test: function () {
