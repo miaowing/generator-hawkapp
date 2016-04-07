@@ -1,10 +1,10 @@
-# yeoman-generator-hawk
+# yeoman-generator-hawkapp
 this yeoman-generator is used for angularJS + requireJS.
 
 #### Usage
 ```
 npm install yo -g
-npm install yeoman-generator-hawk -g 
+npm install generator-hawkapp -g
 ```
 
 ##### Tree
@@ -28,34 +28,34 @@ npm install yeoman-generator-hawk -g
 
 ##### Generate Project
 ```
-$ yo hawk
+$ yo hawkapp
 ? Your project name (myProject) default is current folder name.
 ? Your name (yeoman) 
 ```
 
 ##### Generate Module
 ```
-$ yo hawk:module
+$ yo hawkapp:module
 ? Your module name (myModule) 
 ? Your name (yeoman) 
 ```
 
 ##### Generate Controller
 ```
-$ yo hawk:controller moduleName controllerName author 
+$ yo hawkapp:controller moduleName controllerName author
 ```
 
 ##### Generate Store
 ```
-$ yo hawk:store moduleName storeName author
+$ yo hawkapp:store moduleName storeName author
 ```
 
 ##### Generate Service
 ```
-$ yo hawk:service moduleName serviceName author
+$ yo hawkapp:service moduleName serviceName author
 ```
 
 ##### Generate Template
 ```
-$ yo hawk:view moduleName tplName
+$ yo hawkapp:view moduleName tplName
 ```

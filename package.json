@@ -1,13 +1,13 @@
 {
-  "name": "generator-hawk",
-  "version": "0.1.0",
+  "name": "generator-hawkapp",
+  "version": "0.0.1",
   "description": "yeoman-generator",
   "files": [
     "app",
     "modules"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator", "generator-hawkapp"
   ],
   "dependencies": {
     "lodash": "^3.10.1",
