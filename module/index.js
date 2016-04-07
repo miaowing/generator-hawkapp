@@ -40,7 +40,7 @@ module.exports = generators.Base.extend({
 	writing: function () {
 		var date = new Date();
 		var nowDate = date.getFullYear() + '/' + (date.getMonth()+1) + '/' + date.getDate();
-		var folders = ['controller', 'les', 'service', 'repository', 'view'],
+		var folders = ['controller', 'les', 'service', 'store', 'view'],
 			extendName = ['.js', '.less', '.html'],
 			i = 0;
 

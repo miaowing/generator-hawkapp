@@ -10,7 +10,7 @@ define(
             angular = Lib.angular;
         return function () {
             angular.module('<%= moduleName %>')
-                .factory('<%= moduleName %>Repository', ['$http', '$q', '$resource'
+                .factory('<%= moduleName %>Store', ['$http', '$q', '$resource'
                     function ($http, $q, $resource) {
                         
 

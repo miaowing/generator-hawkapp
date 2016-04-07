@@ -3,7 +3,7 @@
  */
 define(
     [
-        'lib',
+        'lib'
     ],
     function (Lib) {
         var $ = Lib.$,
